@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Doodle Jump</title>
+    <link rel="stylesheet" href="doodlestyle.css">
+
+    <script src="/assets/js/prefixfree.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+
+      <canvas id="canvas">
+        Oh, votre navigateur ne supporte pas HTML5 !
+      </canvas>
+
+      <div id="mainMenu">
+        <h1>doodle jump</h1>
+        <h3>Refait par <a href="https://instagram.com/zozi.calvet/" target="_blank">Enzo.</a></h3>
+        <h3>retour <a href="../../index.html" target="_blank">Acceuil</a></h3>
+
+        <p class="info">
+          utilise
+          <span class="key left">←</span>
+          <span class="key right">→</span>
+          pour bouger et espace pour recommencer...
+        </p>
+        <a class="button" href="javascript:init()">Jouer</a>
+      </div>
+
+      <div id="gameOverMenu">
+        <h1>Partie Perdue!</h1>
+        <h3 id="go_score">Votre score : 0</h3>
+
+        <a class="button" href="javascript:reset()">Recommencer</a>
+      </div>
+
+      <!-- Preloading image ;) -->
+      <img id="sprite" src="http://i.imgur.com/2WEhF.png"/>
+
+      <div id="scoreBoard">
+        <p id="score">0</p>
+      </div>
+
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
